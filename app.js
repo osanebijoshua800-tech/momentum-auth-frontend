@@ -17,7 +17,7 @@ const BACKEND_URL = 'https://momentum-auth-backend.onrender.com';
 
 // 1. Trigger the GitHub handshake login flow
 function loginWithGitHub() {
-    const CLIENT_ID = 'YOUR_GITHUB_CLIENT_ID'; // Replace with your actual Client ID
+    const CLIENT_ID = 'YOUR_GITHUB_CLIENT_ID'; // Ov23li0svl09VYR7LwIo
     window.location.href = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=read:user`;
 }
 
