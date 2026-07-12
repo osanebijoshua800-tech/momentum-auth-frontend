@@ -1,0 +1,94 @@
+:root {
+    --bg-color: #0a0f1d;
+    /* Deep sapphire dark background */
+    --card-bg: #111827;
+    /* Slate card background */
+    --text-main: #f3f4f6;
+    /* Bright off-white */
+    --text-muted: #9ca3af;
+    /* Slate gray */
+    --teal-accent: #06b6d4;
+    /* Bright teal */
+    --teal-hover: #0891b2;
+    /* Deep teal for actions */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-card {
+    background-color: var(--card-bg);
+    border: 1px solid #1e293b;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--teal-accent), #3b82f6);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 auto 1.5rem auto;
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: var(--teal-accent);
+    color: #0a0f1d;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--teal-hover);
+    color: #ffffff;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
